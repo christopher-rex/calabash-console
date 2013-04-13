@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+# clear ARGV for Irb
+
+require 'rubygems'
+require 'calabash-android'
+#require 'calabash-android/calabash_steps'
+require_relative 'calabash_console'
+CCB::CalabashConsole.execute(ARGV.slice!(0..-1)||[])
